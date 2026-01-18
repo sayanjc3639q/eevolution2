@@ -80,7 +80,7 @@ const LAST_UPDATED = "19 Jan 2026, 01:35 ";
         // 6. Donation Data
     const donationData = [
         { name: "Sayan Maity", amount: 10 },
-        { name: "Sayantan Bhowmik", amount: 2 },
+        { name: "Sayantan Bhowmik", amount: 28 },
 
     ];
 
