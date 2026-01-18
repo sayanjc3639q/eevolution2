@@ -45,7 +45,7 @@ const LAST_UPDATED = "19 Jan 2026, 01:35 ";
            { title: "Practice Set 1", subjectId: "be_301", type: "important", date: "2026-01-18", link: "pdf/BFEPS1.pdf"},
            { title: "Practice Set 2", subjectId: "be_301", type: "important", date: "2026-01-18", link: "pdf/BFEPS2.pdf"},
            { title: "Lab Manual", subjectId: "me_301", type: "general", date: "2026-01-19", link: "pdf/Lab Manual.pdf"},
-           { title: "BS-M 101 practice set 5", subjectId: "math_301", type: "important", date: "2026-01-19", link: "pdf/MPS5.pdf"},
+           { title: "BS-M 101 practice set 5", subjectId: "math_301", type: "important", date: "2026-01-19", link: "pdf/MPS5.pdf.pdf"},
 
         ];
 
@@ -80,7 +80,7 @@ const LAST_UPDATED = "19 Jan 2026, 01:35 ";
         // 6. Donation Data
     const donationData = [
         { name: "Sayan Maity", amount: 10 },
-        { name: "Sayantan Bhowmik", amount: 28 },
+        { name: "Sayantan Bhowmik", amount: 2 },
 
     ];
 
