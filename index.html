@@ -355,6 +355,44 @@
         .contrib-info { flex-grow: 1; }
         .contrib-count { font-weight: bold; color: var(--primary); }
 
+        /* Donation Leaderboard Styles */
+    .donor-card {
+        display: flex;
+        align-items: center;
+        background: rgba(0, 210, 255, 0.05); /* Slight blue tint */
+        padding: 12px;
+        border-radius: 8px;
+        margin-bottom: 8px;
+        border: 1px solid rgba(0, 210, 255, 0.1);
+    }
+    
+    .donor-badge {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background: var(--bg-dark);
+        color: var(--secondary); /* Yellow text */
+        border: 1px solid var(--secondary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        margin-right: 15px;
+        font-size: 0.85rem;
+    }
+
+    .donor-amount {
+        font-weight: bold;
+        color: #4ade80; /* Green for money */
+        font-size: 0.95rem;
+    }
+    
+    /* Special styling for top 3 donors */
+    .donor-card.top-donor {
+        background: linear-gradient(90deg, rgba(255, 204, 0, 0.1), transparent);
+        border-color: rgba(255, 204, 0, 0.3);
+    }
+
     </style>
 </head>
 <body>
@@ -461,11 +499,27 @@
                     <div style="font-size:0.8rem; color:var(--text-muted)">Redstone Engineer | EE Student</div>
                 </div>
             </div>
+            <h3 style="margin: 25px 0 15px; border-left: 4px solid #4ade80; padding-left: 10px;">
+        Site Supporters
+    </h3>
+    
+    <div class="upload-cta" style="margin-bottom: 20px; padding: 15px;">
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 10px;">
+            Hosting and maintenance costs are supported by batchmates.
+        </p>
+        <a href="#" class="btn-upload" style="background: #4ade80; color: #000; margin-top:0;">
+            <i class="fas fa-heart"></i> Donate Now
+        </a>
+    </div>
+
+    <div id="donors-list">
+    </div>
 
             <h4 style="margin: 20px 0 10px;">Mentors</h4>
             <div id="teachers-list" class="profile-list">
                 </div>
 
+            
             <div style="margin-top: 30px; text-align: center;">
                 <button style="background:var(--primary); border:none; padding:10px 20px; border-radius:20px; font-weight:bold; margin-bottom:10px; width:100%;">
                     <i class="fas fa-bug"></i> Report a Bug

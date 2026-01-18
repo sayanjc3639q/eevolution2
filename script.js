@@ -75,6 +75,13 @@ const LAST_UPDATED = "19 Jan 2026, 00:10 ";
             { name: "Sayan Maity", uploads: 12 },
         ];
 
+        // 6. Donation Data
+    const donationData = [
+        { name: "Sayan Maity", amount: 69 },
+        { name: "Sayantan Bhowmik", amount: 28 },
+
+    ];
+
         // --- RENDER LOGIC ---
 
         function init() {
@@ -84,8 +91,41 @@ const LAST_UPDATED = "19 Jan 2026, 00:10 ";
             renderStats();
             renderTeachers();
             renderHomeLatest(); 
-            renderContributors();// <--- NEW FUNCTION CALL
+            renderContributors();
+            renderDonators();// <--- NEW FUNCTION CALL
         }
+        // NEW: Render Donation Leaderboard
+    function renderDonators() {
+        const container = document.getElementById('donors-list');
+        if(!container) return;
+        
+        container.innerHTML = '';
+
+        // Sort by Amount (High to Low)
+        const sorted = [...donationData].sort((a,b) => b.amount - a.amount);
+
+        sorted.forEach((donor, index) => {
+            let isTop = index < 3 ? 'top-donor' : '';
+            let medal = '';
+            
+            // Add medals for top 3
+            if (index === 0) medal = '🥇 ';
+            else if (index === 1) medal = '🥈 ';
+            else if (index === 2) medal = '🥉 ';
+
+            container.innerHTML += `
+                <div class="donor-card ${isTop}">
+                    <div class="donor-badge">${index + 1}</div>
+                    <div class="contrib-info">
+                        <strong>${medal}${donor.name}</strong>
+                        <div style="font-size:0.75rem; color:var(--text-muted)">Student</div>
+                    </div>
+                    <div class="donor-amount">
+                        ₹${donor.amount}
+                    </div>
+                </div>`;
+        });
+    }
         // NEW: Render Last Updated Date
 function renderHeaderDate() {
     const el = document.getElementById('last-updated-display');
