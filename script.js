@@ -12,7 +12,7 @@
          * Sayan Maity
          */
 // --- GLOBAL SETTINGS ---
-const LAST_UPDATED = "19 Jan 2026, 01:30 ";
+const LAST_UPDATED = "19 Jan 2026, 01:35 ";
 
 // 1. Subjects Data
         const subjectsData = [
@@ -45,6 +45,7 @@ const LAST_UPDATED = "19 Jan 2026, 01:30 ";
            { title: "Practice Set 1", subjectId: "be_301", type: "important", date: "2026-01-18", link: "pdf/BFEPS1.pdf"},
            { title: "Practice Set 2", subjectId: "be_301", type: "important", date: "2026-01-18", link: "pdf/BFEPS2.pdf"},
            { title: "Lab Manual", subjectId: "me_301", type: "general", date: "2026-01-19", link: "pdf/Lab Manual.pdf"},
+           { title: "BS-M 101 practice set 5", subjectId: "math_301", type: "important", date: "2026-01-19", link: "pdf/MPS5.pdf"},
 
         ];
 
@@ -73,6 +74,7 @@ const LAST_UPDATED = "19 Jan 2026, 01:30 ";
         // 5. Contributors Data
         const contributorsData = [
             { name: "Sayan Maity", uploads: 12 },
+            { name: "Sayantan Bhowmik", uploads: 1 },
         ];
 
         // 6. Donation Data
