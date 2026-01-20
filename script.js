@@ -12,7 +12,7 @@
          * Sayan Maity
          */
 // --- GLOBAL SETTINGS ---
-const LAST_UPDATED = "20 Jan 2026, 12:32 AM ";
+const LAST_UPDATED = "20 Jan 2026, 01:07 PM ";
 
 // 1. Subjects Data
         const subjectsData = [
@@ -22,7 +22,8 @@ const LAST_UPDATED = "20 Jan 2026, 12:32 AM ";
             {name:"Mathematics I",code: "BS-M101",          hiddenId: "math_301",icon: "fa-calculator" },
             {name:"Basic Electrical - Electronics Lab",code: "ES-EE191",hiddenId: "bee_302",icon: "fa-plug"},
             {name:"Physics Labaratory", code:"BS-PH191",    hiddenId:"ph_301",icon:"fa-flask"},
-            {name:"Mechanical Workshop",code:"ES-ME191",    hiddenId:"me_301",icon:"fa-wrench"}
+            {name:"Mechanical Workshop",code:"ES-ME191",    hiddenId:"me_301",icon:"fa-wrench"},
+            {name:"Syllabus",code:"Syllabus",hiddenId:"syllabus",icon:"fa-book-open"}
         ];
 
         // 2. Documents/PDFs Data (ADDED 'date' FIELD)
@@ -46,6 +47,7 @@ const LAST_UPDATED = "20 Jan 2026, 12:32 AM ";
            { title: "Practice Set 2", subjectId: "be_301", type: "important", date: "2026-01-18", link: "pdf/BFEPS2.pdf"},
            { title: "Lab Manual", subjectId: "me_301", type: "general", date: "2026-01-19", link: "pdf/Lab Manual.pdf"},
            { title: "BS-M 101 practice set 5", subjectId: "math_301", type: "important", date: "2026-01-19", link: "pdf/MPS5.pdf.pdf"},
+           { title: "Common Syllabus", subjectId: "syllabus", type: "general", date: "2026-01-20", link:"pdf/CLG SYLB.pdf"},
 
         ];
 
@@ -59,7 +61,11 @@ const LAST_UPDATED = "20 Jan 2026, 12:32 AM ";
                 attachmentType: "pdf", attachmentLink: "pdf/CIRCULAR 2ND & 4TH SEMESTER FEES 2026.pdf"} ,
             {  title: "NPTEL Registration", date:"2026-01-18",
                 content:"Attention all students: NPTEL classes for the upcoming semester are scheduled to begin on Monday, January 19, 2026. Please be advised that the final date for course enrollment is Monday, January 26, 2026, and the last date to register for exams is Monday, February 9, 2026. You are encouraged to enroll in your preferred courses at your earliest convenience via the official SWAYAM-NPTEL portal.",
-            }        
+            } ,
+            {   title: "Odd Semister Exam Fees", date:"2026-01-20",
+                content:"All 1st Year 1st Semester UG/PG students (except MCA) under Autonomy are hereby informed that the End Semester (Odd) Examination Form Fill-up for the academic session 2025-26 will be available online from January 20, 2026 (2:00 PM) via the examination portals hitexam.net / hit.ucanapply.com. Students must submit the examination form and pay the prescribed fee of ₹2000 online within the stipulated timeline. The last date for form submission and fee payment is January 28, 2026, followed by verification by the institute. Admit cards are tentatively scheduled to be generated on January 31, 2026. Students are advised to follow the instructions carefully and check the examination portal regularly for updates.",
+                attachmentType: "pdf", attachmentLink: "pdf/Autonomy Circular-Form Fill-up (Odd)'2025-26-1st. Sem (UG&PG - Except MCA).pdf"
+            }       
             
         ];
 
@@ -75,6 +81,8 @@ const LAST_UPDATED = "20 Jan 2026, 12:32 AM ";
         const contributorsData = [
             { name: "Sayan Maity", uploads: 12 },
             { name: "Sayantan Bhowmik", uploads: 1 },
+            { name: "Sougata Pradhan", uploads: 1},
+        
         ];
 
         // 6. Donation Data
