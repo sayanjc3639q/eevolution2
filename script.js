@@ -184,7 +184,7 @@ function renderContributors() {
             
             sortedNotices.forEach(n => {
                 noticeContainer.innerHTML += `
-                    <div class="mini-card notice-type" onclick="switchTab('notices', document.querySelectorAll('.nav-item')[2])">
+                    <div class="mini-card notice-type" onclick="switchTab('notices', document.querySelectorAll('.nav-item')[3])">
                         <div class="mini-icon"><i class="fas fa-bell"></i></div>
                         <div class="mini-content">
                             <div class="mini-title">${n.title}</div>
