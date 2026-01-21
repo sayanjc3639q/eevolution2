@@ -12,7 +12,7 @@
          * Sayan Maity
          */
 // --- GLOBAL SETTINGS ---
-const LAST_UPDATED = "20 Jan 2026, 01:07 PM ";
+const LAST_UPDATED = "21 Jan 2026, 08:30 PM ";
 
 // 1. Subjects Data
         const subjectsData = [
@@ -89,6 +89,8 @@ const LAST_UPDATED = "20 Jan 2026, 01:07 PM ";
     const donationData = [
         { name: "Sayan Maity", amount: 10 },
         { name: "Sayantan Bhowmik", amount: 28 },
+        { name: "Sayan Parua", amount: 15},
+
 
     ];
 
@@ -142,7 +144,7 @@ function renderHeaderDate() {
     if(el) el.innerText = "Updated: " + LAST_UPDATED;
 }
 
-// NEW: Render Contributors Leaderboard
+// Updated: Render Contributors Leaderboard (Shows Everyone)
 function renderContributors() {
     const container = document.getElementById('contributors-list');
     if(!container) return;
@@ -153,9 +155,11 @@ function renderContributors() {
 
     sorted.forEach((user, index) => {
         let rankClass = '';
+        // Only give Gold/Silver/Bronze badges to top 3
         if (index === 0) rankClass = 'rank-1';
         else if (index === 1) rankClass = 'rank-2';
         else if (index === 2) rankClass = 'rank-3';
+        // Everyone else gets the default rank styling (defined in CSS)
 
         container.innerHTML += `
             <div class="contrib-card">
