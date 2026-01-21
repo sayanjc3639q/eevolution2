@@ -91,7 +91,7 @@ const LAST_UPDATED = "21 Jan 2026, 10:07 PM ";
     const donationData = [
         { name: "Sayan Maity", amount: 10 },
         { name: "Sayantan Bhowmik", amount: 28 },
-        { name: "Sayan Parua", amount: 15},
+        { name: "Sayan Parua", amount: 25},
 
 
     ];
