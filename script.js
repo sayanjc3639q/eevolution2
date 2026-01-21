@@ -48,6 +48,7 @@ const LAST_UPDATED = "21 Jan 2026, 08:30 PM ";
            { title: "Lab Manual", subjectId: "me_301", type: "general", date: "2026-01-19", link: "pdf/Lab Manual.pdf"},
            { title: "BS-M 101 practice set 5", subjectId: "math_301", type: "important", date: "2026-01-19", link: "pdf/MPS5.pdf.pdf"},
            { title: "Common Syllabus", subjectId: "syllabus", type: "general", date: "2026-01-20", link:"pdf/CLG SYLB.pdf"},
+           { title: "Dielectric notes 📝", subjectId: "ph_302", type: "general", date: "2026-01-21", link: "pdf/Dielectric notes  - Sathi Mondal.pdf"}
 
         ];
 
@@ -81,6 +82,7 @@ const LAST_UPDATED = "21 Jan 2026, 08:30 PM ";
         const contributorsData = [
             { name: "Sayan Maity", uploads: 12 },
             { name: "Sayantan Bhowmik", uploads: 1 },
+            { name: "Sathi Mondal 🌻", uploads: 1},
             { name: "Sougata Pradhan", uploads: 1},
         
         ];
