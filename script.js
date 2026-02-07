@@ -12,7 +12,7 @@
          * Sayan Maity
          */
 // --- GLOBAL SETTINGS ---
-const LAST_UPDATED = "21 Jan 2026, 10:07 PM ";
+const LAST_UPDATED = "7 FEB 2026, 11:40 PM ";
 
 // 1. Subjects Data
         const subjectsData = [
